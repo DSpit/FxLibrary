@@ -7,8 +7,10 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 
 import com.dspit.nav.Navigatable.NavNode;
+import com.dspit.nav.Navigation;
 import com.dspit.nav.NavigationAdapter;
 
 public class SideTab extends Scene {
@@ -26,9 +28,11 @@ public class SideTab extends Scene {
 	public SideTab(NavNode home, ArrayList<NavNode> content){
 		super(new AnchorPane());
 		
+		mMenu = new MenuList();
 		
 		
-		mNav = new NavigationAdapter(home, content);
+		
+		mNav = new Navigation(home, content);
 	}
 	
 // Private Inner Classes --------------------------------------------------- //
@@ -37,7 +41,7 @@ public class SideTab extends Scene {
 		
 	//Constructor ---------------------------------------------------------- //
 		
-		public MenuList(ArrayList<NavNode> content){
+		public MenuList(){
 			
 		}
 		
@@ -46,10 +50,17 @@ public class SideTab extends Scene {
 		
 		private class MenuButton extends Label{
 			
+			public MenuButton(String title){
+				super(title);
+				
+				
+			}
 		}
 	}
 	
-	private class Header extends 
+	private class Header extends VBox{
+		
+	}
 }
 
 
