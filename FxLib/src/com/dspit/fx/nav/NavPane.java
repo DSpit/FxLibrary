@@ -7,7 +7,7 @@ import com.dspit.nav.Navigatable.NavNode;
 
 public class NavPane extends Pane implements NavNode {
 	
-	Image mIcon = new Image("src/com/dspit/fx/nav/resources/Temp_Icon.png");
+	Image mIcon = new Image("com/dspit/fx/nav/resources/Temp_Icon.png");
 
 	@Override
 	public String getTitle() {
