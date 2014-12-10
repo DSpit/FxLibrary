@@ -1,7 +1,6 @@
 package com.dspit.fx.nav;
 
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
 
 import com.dspit.nav.Navigatable.NavNode;
 
