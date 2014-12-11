@@ -140,7 +140,7 @@ public class SideTab extends Scene implements Observer{
 			//set height
 			this.setPrefHeight(HEIGHT);
 			//set ID
-			this.setId("header");
+			this.setId(SideTabRes.ID_HEADER);
 			
 			//add label to display title
 			mTitle = new Label(title);
@@ -176,7 +176,7 @@ public class SideTab extends Scene implements Observer{
 			super();
 			
 			//set it
-			this.setId("menu-list");
+			this.setId(SideTabRes.ID_MENU);
 
 			
 			//add home to list
@@ -283,13 +283,13 @@ public class SideTab extends Scene implements Observer{
 			public MenuButton(NavNode n){
 				super();
 				
-				//set the preffered size and what to do when clicked
+				//set the preferred size and what to do when clicked
 				this.setPrefHeight(CONTENT_SIZE);
 				this.setPrefWidth(CONTENT_SIZE);
 				this.setOnAction(new MenuButtonHandler());
 				
 				//set the id and the base
-				this.setId("menu-item");
+				this.setId(SideTabRes.ID_MENU_BUTTON);
 				mBase = n;
 				
 				//get the image url and build the image
